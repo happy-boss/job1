@@ -18,6 +18,27 @@
 		width: 270px;
 		height: 200px;
 	}
+	main{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap:wrap;
+}
+main>.item{
+	flex: none;
+	width: 270px;margin: 10px;
+	background-color: #ffcccc;
+}
+@media (max-width: 1200px){
+	main>.item{
+		width: 45%;
+	}
+}
+@media(max-width: 600px){
+	main>.item{
+		width: 90%;
+	}
+}
 	@media screen and (max-width: 600px){
 		.content{
 			width: 90%;
